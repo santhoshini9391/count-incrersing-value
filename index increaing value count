@@ -1,0 +1,11 @@
+# from 0th index increaing value count n=1234557 and return output as 5
+n=12343
+n=str(n)
+prev=0
+for i in range(len(n)):
+    if prev>=int(n[i]):
+        break
+    prev=int(n[i]) 
+else:
+    i+=1
+print(i)
